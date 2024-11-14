@@ -1,6 +1,7 @@
 ## Preliminaries ----
 ### Call libraries ----
 library(lme4) # model
+library(SlopeDiffTest)
 
 ### Load raw dataset ----
 data("mlbook_red_b_subset")
