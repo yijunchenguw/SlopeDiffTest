@@ -9,6 +9,7 @@ install.packages(pkg_url, repos = NULL)
 ### Call libraries ----
 library(lme4) # model
 library(SlopeDiffTest)
+library(lmerTest)
 
 ### Load raw dataset ----
 data("mlbook_red_b_subset")
