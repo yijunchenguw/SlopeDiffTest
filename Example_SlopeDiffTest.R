@@ -1,4 +1,11 @@
 ## Preliminaries ----
+## install R pacakge
+user    <- "yijunchenguw"
+repo    <- "SlopeDiffTest"
+branch  <- "main"
+fname   <- "SlopeDiffTest_1.0.1.tar.gz"
+pkg_url <- paste("https://raw.github.com", user, repo, branch, fname, sep = "/")
+install.packages(pkg_url, repos = NULL)
 ### Call libraries ----
 library(lme4) # model
 library(SlopeDiffTest)
