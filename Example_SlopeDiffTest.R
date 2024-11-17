@@ -20,6 +20,10 @@ Ex1_model <- lmer(aritPOST ~ 1 + ZlangPOST_CMC + ZIQ_verb_CMC + Zses_CMC
                   + (1|schoolnr),
                   data = mlbook_red_b_subset, REML = FALSE, control = lmerControl(optimizer="nloptwrap"))
 
+## summary of the model ----
+options(scipen=999)
+summary(Ex1_model)
+
 ## Run Slopediff_all_pairs test
 slopediff_all_pairs(Ex1_model)
 
